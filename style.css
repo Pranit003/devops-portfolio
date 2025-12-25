@@ -1,172 +1,149 @@
-/* ========== RESET ========== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
+/* ===== RESET ===== */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f9fafb;
-  color: #1f2933;
-  line-height: 1.6;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
 }
 
-/* ========== HEADER ========== */
-.resume-header {
-  background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
-  padding: 30px 20px;
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: white;
+  padding: 60px 20px;
 }
 
-.resume-top {
+.hero-container {
   max-width: 1100px;
   margin: auto;
-  display: grid;
-  grid-template-columns: 140px minmax(500px, 1fr) auto;
-  gap: 30px;
+  display: flex;
+  gap: 40px;
   align-items: center;
 }
 
-.resume-photo img {
-  width: 120px;
-  height: 120px;
+.hero-img {
+  width: 180px;
   border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #e5e7eb;
+  border: 4px solid #38bdf8;
 }
 
-.resume-info h1 {
-  font-size: 2rem;
-  white-space: nowrap;
+.hero-text h1 {
+  font-size: 40px;
+  margin: 0;
 }
 
-.resume-info h2 {
-  font-size: 1.1rem;
-  color: #2563eb;
-  margin-bottom: 6px;
+.hero-text h2 {
+  color: #38bdf8;
+  margin-top: 6px;
 }
 
-.contact, .location {
-  font-size: 0.9rem;
-  color: #374151;
-  margin-bottom: 6px;
+.socials a {
+  margin-right: 15px;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.summary {
-  font-size: 0.95rem;
-  max-width: 750px;
-}
-
-/* Social Icons */
-.social-links {
-  margin-top: 8px;
-  display: flex;
-  gap: 18px;
-}
-
-.social-links i {
-  font-size: 22px;
-  color: #2563eb;
-}
-
-.social-links i:hover {
-  color: #7c3aed;
-}
-
-/* Resume Buttons */
-.resume-actions {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
+/* ===== BUTTONS ===== */
 .btn {
   padding: 10px 16px;
-  font-size: 0.9rem;
-  font-weight: 600;
   border-radius: 6px;
   text-decoration: none;
-  text-align: center;
+  margin-right: 10px;
 }
 
 .btn.outline {
-  border: 1px solid #2563eb;
-  color: #2563eb;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
 }
 
 .btn.solid {
-  background: #7c3aed;
-  color: #ffffff;
+  background: #38bdf8;
+  color: #020617;
 }
 
-/* ========== NAV TABS ========== */
-.section-nav {
-  max-width: 1100px;
-  margin: 20px auto 0;
+/* ===== NAV ===== */
+.navbar {
+  background: white;
+  padding: 14px;
   display: flex;
-  gap: 22px;
-  flex-wrap: wrap;
-  border-top: 1px solid #e5e7eb;
-  padding-top: 12px;
+  justify-content: center;
+  gap: 25px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-.section-nav a {
+.navbar a {
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.9rem;
-  color: #1f2933;
+  color: #2563eb;
 }
 
-.section-nav a:hover {
-  color: #7c3aed;
+/* ===== CARDS ===== */
+.card {
+  max-width: 1100px;
+  margin: 30px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
 }
 
-/* ========== SECTIONS ========== */
-section {
-  max-width: 900px;
-  margin: 40px auto;
-  background: #ffffff;
-  padding: 30px 20px;
-  border-radius: 8px;
+/* ===== SKILLS ===== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
 }
 
-section h2 {
-  font-size: 1.6rem;
-  margin-bottom: 15px;
-  border-left: 5px solid #2563eb;
-  padding-left: 10px;
+.bar {
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 20px;
 }
 
-section h3 {
-  margin-top: 20px;
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #2563eb, #38bdf8);
+  border-radius: 20px;
 }
 
-ul {
-  padding-left: 20px;
+/* widths */
+.aws { width: 80%; }
+.docker { width: 75%; }
+.jenkins { width: 85%; }
+.linux { width: 80%; }
+.terraform { width: 65%; }
+
+/* ===== DARK MODE ===== */
+body.dark {
+  background: #020617;
+  color: #e5e7eb;
 }
 
-li {
-  margin-bottom: 8px;
+body.dark .card,
+body.dark .navbar {
+  background: #020617;
+  border: 1px solid #1e293b;
 }
 
-/* ========== RESPONSIVE ========== */
+/* ===== TOGGLE ===== */
+#themeToggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: #38bdf8;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
-  .resume-top {
-    grid-template-columns: 1fr;
+  .hero-container {
+    flex-direction: column;
     text-align: center;
-  }
-
-  .resume-actions {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .section-nav {
-    justify-content: center;
   }
 }

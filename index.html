@@ -1,199 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Pravin Kalyankar | DevOps Engineer</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <!-- SEO -->
+  <meta name="description" content="DevOps Engineer skilled in AWS, Docker, Jenkins, CI/CD, Terraform, Linux. Based in Pune, India.">
+  <meta name="keywords" content="DevOps Engineer, AWS DevOps, Jenkins, Docker, Terraform, Linux, Pune">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ================= HEADER / PROFILE ================= -->
-<header class="resume-header" id="profile">
+<!-- Dark mode toggle -->
+<button id="themeToggle">🌙</button>
 
-  <div class="resume-top">
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
+  <div class="hero-container">
 
-    <!-- Profile Photo -->
-    <div class="resume-photo">
-      <img src="assets/images/profile.jpg" alt="Pravin Kalyankar">
-    </div>
+    <img src="assets/profile.png" alt="Pravin Kalyankar" class="hero-img">
 
-    <!-- Profile Info -->
-    <div class="resume-info">
+    <div class="hero-text">
       <h1>Pravin Kalyankar</h1>
       <h2>DevOps Engineer</h2>
 
-      <p class="contact">
-        <i class="fa-solid fa-phone"></i> +91 9823984109 &nbsp; | &nbsp;
-        <i class="fa-solid fa-envelope"></i> pravin.kalyankar.dev@gmail.com
-      </p>
-
-      <p class="summary">
-        Hello! I am Pravin, a DevOps Engineer with hands-on experience in CI/CD pipelines,
-        AWS cloud infrastructure, Docker, Linux systems, and automation.
+      <p>
+        DevOps Engineer with hands-on experience in CI/CD pipelines, AWS cloud
+        infrastructure, Docker, Linux systems, and automation.
         Currently working at VOIS (Vodafone Intelligent Solutions).
       </p>
 
-      <p class="location">
-        <i class="fa-solid fa-location-dot"></i> Pune, Maharashtra
-      </p>
+      <p class="location">📍 Pune, Maharashtra</p>
 
-      <!-- Social Links -->
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/pravin-kalyankar/" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/Pranit003" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.naukri.com/mnjuser/profile" target="_blank">
-          <i class="fa-solid fa-briefcase"></i>
-        </a>
+      <div class="socials">
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Pranit003" target="_blank">GitHub</a>
+        <a href="https://www.naukri.com/" target="_blank">Naukri</a>
+      </div>
+
+      <div class="cta">
+        <a href="resume/Pravin_Kalyankar_DevOps_Engineer.pdf" target="_blank" class="btn outline">View Resume</a>
+        <a href="resume/Pravin_Kalyankar_DevOps_Engineer.pdf" download class="btn solid">Download Resume</a>
       </div>
     </div>
 
-    <!-- Resume Buttons -->
-    <div class="resume-actions">
-      <a href="assets/resume/Pravin_Kalyankar_DevOps_Engineer.pdf" target="_blank" class="btn outline">View Resume</a>
-      <a href="assets/resume/Pravin_Kalyankar_DevOps_Engineer.pdf" download class="btn solid">Download Resume</a>
+  </div>
+</section>
+
+<!-- ===== NAV ===== -->
+<nav class="navbar">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#education">Education</a>
+</nav>
+
+<!-- ===== ABOUT ===== -->
+<section class="card" id="about">
+  <h3>Profile Overview</h3>
+  <p>
+    DevOps Engineer focused on building scalable, reliable, and automated
+    infrastructure. Strong experience in CI/CD automation, containerization,
+    cloud services, and Linux administration.
+  </p>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="card" id="skills">
+  <h3>Core Skills</h3>
+
+  <div class="skills-grid">
+    <div class="skill">
+      <span>AWS</span>
+      <div class="bar"><div class="progress aws"></div></div>
     </div>
 
+    <div class="skill">
+      <span>Docker</span>
+      <div class="bar"><div class="progress docker"></div></div>
+    </div>
+
+    <div class="skill">
+      <span>Jenkins</span>
+      <div class="bar"><div class="progress jenkins"></div></div>
+    </div>
+
+    <div class="skill">
+      <span>Linux</span>
+      <div class="bar"><div class="progress linux"></div></div>
+    </div>
+
+    <div class="skill">
+      <span>Terraform</span>
+      <div class="bar"><div class="progress terraform"></div></div>
+    </div>
   </div>
-
-  <!-- Navigation Tabs -->
-  <nav class="section-nav">
-    <a href="#profile-overview">Profile Overview</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Professional Experience</a>
-    <a href="#achievements">Achievements</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
-  </nav>
-
-</header>
-
-<!-- ================= PROFILE OVERVIEW ================= -->
-<section id="profile-overview">
-  <h2>Profile Overview</h2>
-  <p>
-    DevOps Engineer with practical experience in CI/CD automation, cloud infrastructure
-    management on AWS, containerization using Docker, and Linux-based deployments.
-  </p>
-  <p>
-    Actively contributing to an internal enterprise DevOps platform at VOIS,
-    supporting reliable application delivery, infrastructure automation,
-    and operational stability.
-  </p>
-  <p>
-    Known for a strong delivery mindset, continuous learning, and collaboration
-    with cross-functional teams to streamline release cycles.
-  </p>
 </section>
 
-<!-- ================= SKILLS ================= -->
-<section id="skills">
-  <h2>Skills</h2>
+<!-- ===== EXPERIENCE ===== -->
+<section class="card" id="experience">
+  <h3>Professional Experience</h3>
+  <h4>DevOps Engineer – VOIS</h4>
   <ul>
-    <li>AWS (EC2, S3, IAM, VPC)</li>
-    <li>Docker & Docker Compose</li>
-    <li>Git & GitHub</li>
-    <li>Jenkins (CI/CD Pipelines)</li>
-    <li>Linux (User Management, Processes, Networking)</li>
-    <li>Shell Scripting</li>
-    <li>Terraform (Basic)</li>
-    <li>Kubernetes (Basic)</li>
+    <li>Built and maintained CI/CD pipelines using Jenkins</li>
+    <li>Managed AWS EC2, IAM, and Docker-based deployments</li>
+    <li>Automated operational workflows using shell scripting</li>
   </ul>
 </section>
 
-<!-- ================= EXPERIENCE ================= -->
-<section id="experience">
-  <h2>Professional Experience</h2>
-
-  <h3>DevOps Engineer</h3>
-  <p><strong>VOIS (Vodafone Intelligent Solutions)</strong></p>
-  <p>Aug 2023 – Present | Pune, India</p>
-
+<!-- ===== PROJECTS ===== -->
+<section class="card" id="projects">
+  <h3>Projects</h3>
   <ul>
-    <li>Working on an internal enterprise DevOps platform for application build and deployment.</li>
-    <li>Designed and supported CI/CD pipelines using Jenkins.</li>
-    <li>Managed Linux-based servers and AWS EC2 infrastructure.</li>
-    <li>Built and maintained Docker images for containerized deployments.</li>
-    <li>Automated routine tasks using Shell scripting.</li>
-    <li>Assisted in infrastructure provisioning using Terraform.</li>
+    <li><strong>VBIT Run & Build:</strong> Enterprise CI/CD and cloud automation</li>
+    <li><strong>Dockerized Applications:</strong> Multi-stage builds & ECR</li>
+    <li><strong>Terraform Automation:</strong> EC2 & IAM provisioning</li>
   </ul>
 </section>
 
-<!-- ================= PROJECTS ================= -->
-<section id="projects">
-  <h2>Projects</h2>
-
-  <h3>VBIT Run & Build DevOps Platform – CI/CD & Cloud Operations</h3>
-  <ul>
-    <li>Enterprise DevOps platform supporting CI/CD automation.</li>
-    <li>Jenkins pipelines for build and deployment.</li>
-    <li>AWS EC2 deployments with IAM access.</li>
-    <li>Docker-based containerized applications.</li>
-  </ul>
-
-  <h3>CI/CD Pipeline Automation using Jenkins</h3>
-  <ul>
-    <li>GitHub integration with Jenkins.</li>
-    <li>Automated build and deployment pipelines.</li>
-  </ul>
-
-  <h3>Dockerized Application Deployment</h3>
-  <ul>
-    <li>Single-stage and multi-stage Docker builds.</li>
-    <li>Images pushed to Docker Hub and AWS ECR.</li>
-  </ul>
-
-  <h3>Infrastructure Automation with Terraform</h3>
-  <ul>
-    <li>Provisioned AWS EC2 infrastructure.</li>
-    <li>Repeatable IaC-based setups.</li>
-  </ul>
-
-  <h3>Personal DevOps Portfolio Website</h3>
-  <ul>
-    <li>Built a portfolio website using HTML and CSS.</li>
-    <li>Used Git and GitHub for version control.</li>
-  </ul>
+<!-- ===== EDUCATION ===== -->
+<section class="card" id="education">
+  <h3>Education</h3>
+  <p>B.E. Computer Science – Sinhgad Institute, Pune (2019–2023)</p>
 </section>
 
-
-<!-- ================= ACHIEVEMENTS ================= -->
-<section id="achievements">
-  <h2>Achievements</h2>
-  <ul>
-    <li>Client appreciation for optimizing delivery workflows (2025).</li>
-    <li>Recognized for positive attitude and team contribution (2025).</li>
-    <li>Manager appreciation for consistent delivery (2024).</li>
-    <li>Recognized for continuous upskilling and collaboration (2024).</li>
-  </ul>
-</section>
-
-<!-- ================= CERTIFICATIONS ================= -->
-<section id="certifications">
-  <h2>Certifications</h2>
-  <ul>
-    <li>AWS Certified Cloud Practitioner – In Progress</li>
-    <li>Docker & DevOps Certifications – Planned</li>
-  </ul>
-</section>
-
-<!-- ================= EDUCATION ================= -->
-<section id="education">
-  <h2>Education</h2>
-  <h3>Bachelor of Engineering – Computer Science</h3>
-  <p>Sinhgad Institute of Technology & Science, Pune</p>
-  <p>2019 – 2023</p>
-</section>
-
+<script src="script.js"></script>
 </body>
 </html>
